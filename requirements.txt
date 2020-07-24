@@ -4,7 +4,7 @@ appdirs==1.4.4
 argh==0.26.2
 asn1crypto==1.3.0
 astor==0.8.1
-astroid @ file:///tmp/build/80754af9/astroid_1592495881661/work
+astroid==2.4.2
 astropy==4.0.1.post1
 atomicwrites==1.4.0
 attrs==19.3.0
@@ -21,7 +21,7 @@ bitarray==1.2.2
 bkcharts==0.2
 bleach==3.1.5
 blinker==1.4
-bokeh @ file:///tmp/build/80754af9/bokeh_1593187586470/work
+bokeh==2.1.1
 boto==2.49.0
 boto3==1.14.27
 botocore==1.17.27
@@ -50,12 +50,12 @@ dash-core-components==1.10.1
 dash-html-components==1.0.3
 dash-renderer==1.5.0
 dash-table==4.8.1
-dask @ file:///tmp/build/80754af9/dask-core_1592842333140/work
+dask==2.19.0
 decorator==4.4.2
 defusedxml==0.6.0
 diff-match-patch==20181111
 distlib==0.3.0
-distributed @ file:///tmp/build/80754af9/distributed_1592842468712/work
+distributed==2.19.0
 docutils==0.15.2
 entrypoints==0.3
 enum-compat==0.0.3
@@ -67,7 +67,7 @@ Flask==1.1.2
 Flask-Compress==1.5.0
 fsspec==0.7.4
 future==0.18.2
-gevent @ file:///tmp/build/80754af9/gevent_1593009958030/work
+gevent==20.6.2
 glob2==0.7
 gmpy2==2.0.8
 greenlet==0.4.16
@@ -79,11 +79,11 @@ hypothesis==5.16.1
 idna==2.9
 imageio==2.8.0
 imagesize==1.2.0
-imbalanced-learn @ file:///home/conda/feedstock_root/build_artifacts/imbalanced-learn_1591716883293/work
+imbalanced-learn==0.7.0
 importlib-metadata==1.6.1
 intervaltree==3.0.2
 ipykernel==5.3.0
-ipython @ file:///tmp/build/80754af9/ipython_1592348411427/work
+ipython==7.15.0
 ipython-genutils==0.2.0
 ipywidgets==7.5.1
 isort==4.3.21
@@ -103,7 +103,7 @@ jupyter-core==4.6.3
 jupyterlab==2.1.4
 jupyterlab-server==1.1.5
 jupyterthemes==0.20.0
-keyring @ file:///tmp/build/80754af9/keyring_1593109704604/work
+keyring=21.2.1
 kiwisolver==1.2.0
 lazy-object-proxy==1.4.3
 lesscpy==0.14.0
@@ -112,7 +112,7 @@ llvmlite==0.32.1
 locket==0.2.0
 lxml==4.5.1
 MarkupSafe==1.1.1
-matplotlib @ file:///tmp/build/80754af9/matplotlib-base_1592846017414/work
+matplotlib==3.2.2
 mccabe==0.6.1
 mistune==0.8.4
 mkl-fft==1.1.0
@@ -127,7 +127,7 @@ navigator-updater==0.2.1
 nbconvert==5.6.1
 nbformat==5.0.7
 networkx==2.4
-nltk @ file:///tmp/build/80754af9/nltk_1592496090529/work
+nltk==3.5
 nose==1.3.7
 notebook==6.0.3
 numba==0.49.1
@@ -137,7 +137,7 @@ numpydoc==1.0.0
 olefile==0.46
 openpyxl==3.0.3
 packaging==20.4
-pandas @ file:///tmp/build/80754af9/pandas_1592841632039/work
+pandas==1.0.5 
 pandocfilters==1.4.2
 parso==0.5.2
 partd==1.1.0
@@ -166,11 +166,11 @@ pycparser==2.20
 pycrypto==2.6.1
 pycurl==7.43.0.5
 pydeck==0.4.0b2
-pydocstyle @ file:///tmp/build/80754af9/pydocstyle_1592848020240/work
+pydocstyle==5.0.2
 pyflakes==2.1.1
 Pygments==2.6.1
-pylint @ file:///tmp/build/80754af9/pylint_1592496044040/work
-pyodbc===4.0.0-unsupported
+pylint==2.5.3
+pyodbc===4.0.30
 pyOpenSSL==19.1.0
 pyparsing==2.4.7
 pyrsistent==0.16.0
@@ -192,18 +192,18 @@ PyYAML==5.3.1
 pyzmq==19.0.1
 QDarkStyle==2.8.1
 QtAwesome==0.7.2
-qtconsole @ file:///tmp/build/80754af9/qtconsole_1592848611704/work
+qtconsole==4.7.5
 QtPy==1.9.0
 regex==2020.5.14
-requests @ file:///tmp/build/80754af9/requests_1592841827918/work
+requests==2.24.0
 retrying==1.3.3
 rope==0.17.0
 Rtree==0.9.4
 ruamel-yaml==0.15.87
 s3transfer==0.3.3
 scikit-image==0.16.2
-scikit-learn @ file:///tmp/build/80754af9/scikit-learn_1592502882224/work
-scipy @ file:///tmp/build/80754af9/scipy_1592930510235/work
+scikit-learn==0.23.1
+scipy==1.5.0
 seaborn==0.10.1
 SecretStorage==3.1.2
 Send2Trash==1.5.0
@@ -214,14 +214,14 @@ snowballstemmer==2.0.0
 sortedcollections==1.2.1
 sortedcontainers==2.2.2
 soupsieve==2.0.1
-Sphinx @ file:///tmp/build/80754af9/sphinx_1592842202926/work
+Sphinx==3.1.1
 sphinxcontrib-applehelp==1.0.2
 sphinxcontrib-devhelp==1.0.2
 sphinxcontrib-htmlhelp==1.0.3
 sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==1.0.3
 sphinxcontrib-serializinghtml==1.1.4
-sphinxcontrib-websupport @ file:///tmp/build/80754af9/sphinxcontrib-websupport_1592842361205/work
+sphinxcontrib-websupport==1.2.2
 spyder==4.1.3
 spyder-kernels==1.9.1
 SQLAlchemy==1.3.17
@@ -232,14 +232,14 @@ tables==3.6.1
 tblib==1.6.0
 terminado==0.8.3
 testpath==0.4.4
-threadpoolctl @ file:///tmp/tmp9twdgx9k/threadpoolctl-2.1.0-py3-none-any.whl
-toml @ file:///tmp/build/80754af9/toml_1592853716807/work
+threadpoolctl==2.1.0
+toml==0.10.1
 toolz==0.10.0
 tornado==6.0.4
 tqdm==4.46.1
 traitlets==4.3.3
 typed-ast==1.4.1
-typing-extensions @ file:///tmp/build/80754af9/typing_extensions_1592847887441/work
+typing-extensions==3.7.4.2
 tzlocal==2.1
 ujson==1.35
 unicodecsv==0.14.1
@@ -257,7 +257,7 @@ xlrd==1.2.0
 XlsxWriter==1.2.9
 xlwt==1.3.0
 xmltodict==0.12.0
-yapf @ file:///tmp/build/80754af9/yapf_1592847929485/work
+yapf==0.29.0
 zict==2.0.0
 zipp==3.1.0
 zope.event==4.4
