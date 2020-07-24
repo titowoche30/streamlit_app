@@ -70,7 +70,6 @@ gmpy2==2.0.8
 greenlet==0.4.16
 h5py==2.10.0
 HeapDict==1.0.1
-hello==0.0.1
 html5lib==1.0.1
 hypothesis==5.16.1
 idna==2.9
