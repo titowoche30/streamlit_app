@@ -103,7 +103,7 @@ jupyter-core==4.6.3
 jupyterlab==2.1.4
 jupyterlab-server==1.1.5
 jupyterthemes==0.20.0
-keyring=21.2.1
+keyring==21.2.1
 kiwisolver==1.2.0
 lazy-object-proxy==1.4.3
 lesscpy==0.14.0
