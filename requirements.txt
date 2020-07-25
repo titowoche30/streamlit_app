@@ -65,7 +65,7 @@ Flask-Compress==1.5.0
 fsspec==0.7.4
 future==0.18.2
 gevent==20.6.2
-gunicorn==19.0.0
+gunicorn==19.5.0
 glob2==0.7
 greenlet==0.4.16
 h5py==2.10.0
