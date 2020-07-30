@@ -80,6 +80,8 @@ def corre(df):
 
     return cor_plot + text
 
+
+
 def main():
     st.image('media/eu.jpeg',width=300)
     st.header('Pré-processador do Tito')
@@ -111,18 +113,32 @@ def main():
         st.dataframe(df_nulos.head(slider_1))
 
         st.markdown('**Preencher colunas que têm NULL**')
-        cols_select = st.multiselect('Selecione as colunas a serem preenchidas', tuple(null_cols))
+        cols_select = st.multiselect('Selecione as colunas a serem preenchidas', tuple(['Dropar linhas com NULL'] + list(null_cols)))
         st.markdown(f'Escolheu = {cols_select}')
 
-        df_nulls = pd.DataFrame({'colunas':cols_select,'tipos':df[cols_select].dtypes})
-        cat_cols = list(df_nulls[df_nulls['tipos'] == 'object'].index)
+        
+        if cols_select == ['Dropar linhas com NULL']:
+            df = df.dropna(axis=0,how='any')
+            slider_7 = st.slider('Número de linhas  ',1,100)
+            cols_select = None
+            st.markdown('**Novo DataFrame**')
+            st.markdown(f'**Shape do novo = {df.shape}**')
+            st.dataframe(df.head(slider_7))
+            # if st.button('Gerar link de download do dataframe'):
+            #     tmp_download_link = download_link(df, 'data.csv', 'Download')
+            #     st.markdown(tmp_download_link, unsafe_allow_html=True)
 
-        cols_select = list(set(cols_select) - set(cat_cols))
-
+    
+        
         #if st.button('Continuar'):
         if cols_select: 
+            df_nulls = pd.DataFrame({'colunas':cols_select,'tipos':df[cols_select].dtypes})
+            cat_cols = list(df_nulls[df_nulls['tipos'] == 'object'].index)
+
+            cols_select = list(set(cols_select) - set(cat_cols)) 
             st.markdown('Preencher os nulos')
-            opt = st.radio('Escolha um método de preenchimento(colunas categoricas serão preenchidas com a moda)', ('Zero','Media','Moda','Mediana','Interpolacao Linear'))
+            opt = st.radio('Escolha um método de preenchimento(colunas categoricas serão preenchidas com a moda)', ('Dropar linhas com NULL','Zero','Media','Moda','Mediana','Interpolacao Linear'))
+            
             
             if opt == 'Zero':
                 df[cols_select]=df[cols_select].fillna(0)
@@ -160,6 +176,10 @@ def main():
                 df = cat_input(df,cat_cols)
                 slider_6 = st.slider('Número de linhas  ',1,100)
                 st.dataframe(df.loc[df_nulos.index,list(cols_select) + list(cat_cols)].head(slider_6))
+
+        if st.button('Gerar link de download do dataframe'):
+            tmp_download_link = download_link(df, 'data.csv', 'Download')
+            st.markdown(tmp_download_link, unsafe_allow_html=True)
 
         st.subheader('Visualização de Dados')
         st.image('media/Data.gif',width=300)
