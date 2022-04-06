@@ -17,7 +17,7 @@ jsonschema==3.2.0
 joblib==0.15.1
 libarchive-c==2.9
 matplotlib==3.2.2
-notebook==6.1.5
+notebook==6.4.10
 numba==0.49.1
 numexpr==2.7.1
 numpy==1.18.5
